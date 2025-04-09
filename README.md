@@ -13,7 +13,7 @@ The dimond shows the status of your last commands exit code (*Successful or fail
 ![image](https://github.com/user-attachments/assets/dbf687eb-c310-4f46-bd6b-06315d5264d0)
 If the command failed the diamond will go red, if successful it will stay magenta
 
-Dark-My-Posh also supports command run time, show how long a command took to run. 
+Dark-My-Posh also supports command run time, shows how long a command took to run. 
 ![image](https://github.com/user-attachments/assets/22d4d427-230e-4736-93e2-d8b16e919640)
 
 It also gives simple Git info if your CWD is a repository
