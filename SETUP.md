@@ -38,6 +38,8 @@ With Clink now installed and set up on your CMD terminal you will need to create
 ```shell
 clink info
 ```
+<sub>It is likely you'll find it `C:\Program Files (x86)\clink\scripts`</sub>
+
 Once you've found the directory and made the `oh-my-posh.lua` file inside it, use a text editor to edit the file and paste the following line:
 ```lua
 load(io.popen('oh-my-posh init cmd --config [DIRECTORY].dark-My-Posh.omp.json'):read("*a"))()
@@ -45,7 +47,8 @@ load(io.popen('oh-my-posh init cmd --config [DIRECTORY].dark-My-Posh.omp.json'):
 Of course replacing [DIRECTORY] with the actual files location. It is recommended to be places within your home directory.
 > [!TIP]
 > You can use notepad again for this however it is recommended you us an actual IDE text editor such as VScode.
-> to do this in notepade you can simply do the following
+> 
+> To do this in notepade you can simply do the following
 > ```cmd
 > notepad oh-my-posh.lua
 > ```
@@ -54,7 +57,7 @@ Of course replacing [DIRECTORY] with the actual files location. It is recommende
 > code oh-my-posh.lua
 > ```
 
-Once the file is edited and saved you must restart your CMD termianl to see it take effect.
+Once the file is edited and saved you must restart your CMD terminal to see it take effect.
 
 ## Bash
 Bash is the easiest one to set up (*cause y'know, Linux. Why wouldn't it be*). All you have for setting the theme up in a bash terminal are three easy steps:
@@ -81,3 +84,4 @@ Or
 ```bash
 . ~/.profile
 ```
+If done right, your use prompt sections will change applying the theme.
