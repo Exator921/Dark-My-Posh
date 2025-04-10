@@ -27,3 +27,5 @@ It also gives simple Git info if your CWD is a repository:
 It is recommended you use the `SauceCodePro Nerd Font` however any nerdfont should work fine with this theme.
 
 For set up instructions please visit the [Oh-My-Posh instructions page](https://ohmyposh.dev/docs/installation/prompt) or refer to the [SETUP.md](https://github.com/Exator921/Dark-My-Posh/blob/main/SETUP.md) file within this repository
+
+<sub>Creator rights go to Exator911. Copyright belongs to the public domain, you may not claim copyright over the code and attempt to sue the creator as you don't own the rights to the code. This code is public use for a reason.</sub>
