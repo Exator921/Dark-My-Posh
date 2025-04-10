@@ -25,3 +25,5 @@ It also gives simple Git info if your CWD is a repository:
 - `main` if nothing is detected between repo and CWD.
 
 It is recommended you use the `SauceCodePro Nerd Font` however any nerdfont should work fine with this theme.
+
+For set up instructions please visit the [Oh-My-Posh instructions page](https://ohmyposh.dev/docs/installation/prompt) or refer to the [SETUP.md](https://github.com/Exator921/Dark-My-Posh/blob/main/SETUP.md) file within this repository
