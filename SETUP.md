@@ -82,6 +82,6 @@ exec bash
 ```
 Or
 ```bash
-. ~/.profile
+. ~/.profile #If applicable change "profile" to what your source file is.
 ```
-If done right, your use prompt sections will change applying the theme.
+If done right, your user prompt sections will change applying the theme.
