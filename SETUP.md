@@ -2,8 +2,8 @@
 
 This set up file includes set up instructions for applying the oh-my-posh theme on the following terminals:
 - [PowerShell](https://github.com/Exator921/Dark-My-Posh/blob/main/SETUP.md#powershell)
-- [Command Prompt](https://github.com/Exator921/Dark-My-Posh/blob/main/SETUP.md#powershell)
-- [Bash](https://github.com/Exator921/Dark-My-Posh/blob/main/SETUP.md#powershell)
+- [Command Prompt](https://github.com/Exator921/Dark-My-Posh/blob/main/SETUP.md#command-prompt)
+- [Bash](https://github.com/Exator921/Dark-My-Posh/blob/main/SETUP.md#bash)
 
 Ensure you have oh-my-posh installed and download the theme [file](https://github.com/Exator921/Dark-My-Posh/blob/main/.dark-My-Posh.omp.json).
 >[!TIP]
