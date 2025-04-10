@@ -9,7 +9,7 @@ Ensure you have oh-my-posh installed and download the theme [file](https://githu
 >[!TIP]
 > It is recommended to have the theme file in your home directory for easy access of the file, but you can place it where ever you may need/want.
 
-For instructions on other terminals please go to the [oh-my-posh instructions page](https://ohmyposh.dev/docs/installation/prompt)
+For instructions on other terminals please go to the [oh-my-posh instructions page](https://ohmyposh.dev/docs/installation/prompt).
 
 ## PowerShell
 Open a text editor from your terminal to make and/or edit your $PROFILE file, an easy thing to do would be use notepad but you can use whatever will allow you to parse the $PROFILE file into.
@@ -34,7 +34,7 @@ If done properly your user prompt section will change and show the new theme.
 ## Command Prompt
 Command prompt (or otherwise called CMD) does not have a native way to use oh-my-posh so you must add a thirty-party software to use it, easily enough you can just use [Clink](https://chrisant996.github.io/clink/) for this process. Intall Clink following their installation instrunctions then return here, make sure you set up auto-start so you don't need to load it manually every time you open CMD.
 
-With Clink now installed and set up on your CMD terminal you will need to create a `oh-my-posh.lua` file in your Clink Scripts directory, you can find that directory easily using the following command
+With Clink now installed and set up on your CMD terminal you will need to create a `oh-my-posh.lua` file in your Clink Scripts directory, you can find that directory easily using the following command:
 ```shell
 clink info
 ```
