@@ -21,7 +21,7 @@ With the theme installed and in a location you know the directory to, paste the 
 ```
 oh-my-posh init pwsh --config [DIRECTORY].dark-My-Posh.omp.json | Invoke-Expression 
 ```
-Of course replacing [DIRECTORY] with the actual files location. It is recommended to be places within your home directory.
+Of course replacing [DIRECTORY] with the actual files location. It is recommended to be placed within your home directory.
 
 
 Once the $PROFILE has been saved with the line provided, return to your terminal and reload your terminals source. This can be done by using the following command:
@@ -44,7 +44,7 @@ Once you've found the directory and made the `oh-my-posh.lua` file inside it, us
 ```lua
 load(io.popen('oh-my-posh init cmd --config [DIRECTORY].dark-My-Posh.omp.json'):read("*a"))()
 ```
-Of course replacing [DIRECTORY] with the actual files location. It is recommended to be places within your home directory.
+Of course replacing [DIRECTORY] with the actual files location. It is recommended to be placed within your home directory.
 > [!TIP]
 > You can use notepad again for this however it is recommended you us an actual IDE text editor such as VScode.
 > 
@@ -74,7 +74,7 @@ Next, paste this line (DO NOT REPLACE WHAT IS ALREADY IN THERE):
 ```profile
 eval "$(oh-my-posh init bash --config [DIRECTORY].dark-My-Posh.omp.json)"
 ```
-Of course replacing [DIRECTORY] with the actual files location. It is recommended to be places within your home directory.
+Of course replacing [DIRECTORY] with the actual files location. It is recommended to be placed within your home directory.
 
 Once the line is added save the file and reload your source:
 ```bash
