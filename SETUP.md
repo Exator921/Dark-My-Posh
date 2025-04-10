@@ -1,9 +1,13 @@
 # Set up instructions
 
 This set up file includes set up instructions for applying the oh-my-posh theme on the following terminals:
-- PowerShell
-- Command Prompt
-- Bash
+- [PowerShell](https://github.com/Exator921/Dark-My-Posh/blob/main/SETUP.md#powershell)
+- [Command Prompt](https://github.com/Exator921/Dark-My-Posh/blob/main/SETUP.md#powershell)
+- [Bash](https://github.com/Exator921/Dark-My-Posh/blob/main/SETUP.md#powershell)
+
+Ensure you have oh-my-posh installed and download the theme [file](https://github.com/Exator921/Dark-My-Posh/blob/main/.dark-My-Posh.omp.json).
+>[!TIP]
+> It is recommended to have the theme file in your home directory for easy access of the file, but you can place it where ever you may need/want.
 
 For instructions on other terminals please go to the [oh-my-posh instructions page](https://ohmyposh.dev/docs/installation/prompt)
 
@@ -17,7 +21,7 @@ With the theme installed and in a location you know the directory to, paste the 
 ```
 oh-my-posh init pwsh --config [DIRECTORY].dark-My-Posh.omp.json | Invoke-Expression 
 ```
-Of course replacing [DIRECTORY] with the actual file locations. It is recommended to be places within your home directory.
+Of course replacing [DIRECTORY] with the actual files location. It is recommended to be places within your home directory.
 
 
 Once the $PROFILE has been saved with the line provided, return to your terminal and reload your terminals source. This can be done by using the following command:
@@ -35,20 +39,45 @@ With Clink now installed and set up on your CMD terminal you will need to create
 clink info
 ```
 Once you've found the directory and made the `oh-my-posh.lua` file inside it, use a text editor to edit the file and paste the following line:
-```
+```lua
 load(io.popen('oh-my-posh init cmd --config [DIRECTORY].dark-My-Posh.omp.json'):read("*a"))()
 ```
+Of course replacing [DIRECTORY] with the actual files location. It is recommended to be places within your home directory.
 > [!TIP]
 > You can use notepad again for this however it is recommended you us an actual IDE text editor such as VScode.
 > to do this in notepade you can simply do the following
-> ```shell
+> ```cmd
 > notepad oh-my-posh.lua
 > ```
 > and for VScode use
-> ```shell
+> ```cmd
 > code oh-my-posh.lua
 > ```
 
 Once the file is edited and saved you must restart your CMD termianl to see it take effect.
 
 ## Bash
+Bash is the easiest one to set up (*cause y'know, Linux. Why wouldn't it be*). All you have for setting the theme up in a bash terminal are three easy steps:
+
+Open your source file, depending on your distribution/environment this can be done many ways:
+```bash
+sudo nano ~/.bashrc
+sudo nano ~/.profile
+sudo nano ~/.bash_profile
+```
+You'll know when you find your source when one of the files already has code in it.
+
+Next, paste this line (DO NOT REPLACE WHAT IS ALREADY IN THERE):
+```profile
+eval "$(oh-my-posh init bash --config [DIRECTORY].dark-My-Posh.omp.json)"
+```
+Of course replacing [DIRECTORY] with the actual files location. It is recommended to be places within your home directory.
+
+Once the line is added save the file and reload your source:
+```bash
+exec bash
+```
+Or
+```bash
+. ~/.profile
+```
