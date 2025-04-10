@@ -38,7 +38,7 @@ With Clink now installed and set up on your CMD terminal you will need to create
 ```shell
 clink info
 ```
-<sub>It is likely you'll find it `C:\Program Files (x86)\clink\scripts`</sub>
+<sub>It is likely you'll find it in `C:\Program Files (x86)\clink\scripts`</sub>
 
 Once you've found the directory and made the `oh-my-posh.lua` file inside it, use a text editor to edit the file and paste the following line:
 ```lua
