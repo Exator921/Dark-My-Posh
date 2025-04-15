@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Oh My Posh Theme Schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "final_space": {
+      "type": "boolean"
+    },
+    "console_title_template": {
+      "type": "string"
+    },
+    "secondary_prompt": {
+      "type": "object",
+      "properties": {
+        "template": {
+          "type": "string"
+        },
+        "foreground": {
+          "type": "string"
+        },
+        "background": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "template",
+        "foreground",
+        "background"
+      ]
+    },
+    "transient_prompt": {
+      "type": "object",
+      "properties": {
+        "template": {
+          "type": "string"
+        },
+        "foreground": {
+          "type": "string"
+        },
+        "background": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "template",
+        "foreground",
+        "background"
+      ]
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "prompt",
+              "rprompt"
+            ]
+          },
+          "alignment": {
+            "type": "string",
+            "enum": [
+              "left",
+              "right"
+            ]
+          },
+          "newline": {
+            "type": "boolean"
+          },
+          "overflow": {
+            "type": "string",
+            "enum": [
+              "hidden",
+              "scroll",
+              "visible"
+            ]
+          },
+          "segments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "style": {
+                  "type": "string"
+                },
+                "template": {
+                  "type": "string"
+                },
+                "foreground": {
+                  "type": "string"
+                },
+                "background": {
+                  "type": "string"
+                },
+                "foreground_templates": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "properties": {
+                  "type": "object",
+                  "properties": {
+                    "style": {
+                      "type": "string"
+                    },
+                    "branch_icon": {
+                      "type": "string"
+                    },
+                    "commit_icon": {
+                      "type": "string"
+                    },
+                    "fetch_status": {
+                      "type": "boolean"
+                    },
+                    "threshold": {
+                      "type": "integer"
+                    }
+                  },
+                  "additionalProperties": true
+                }
+              },
+              "required": [
+                "type",
+                "style",
+                "template"
+              ]
+            }
+          }
+        },
+        "required": [
+          "type",
+          "segments"
+        ]
+      }
+    }
+  },
+  "required": [
+    "version",
+    "blocks"
+  ]
+}
