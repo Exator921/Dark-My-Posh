@@ -1,4 +1,5 @@
 {
+  "schema" : "dark-My-Posh.schema.json",
   "secondary_prompt": {
     "template": "❯❯ ",
     "foreground": "magenta",
@@ -9,7 +10,7 @@
     "background": "transparent",
     "foreground": "magenta"
   },
-  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+  "console_title_template": "{{ .Shell | upper }} in {{ .Folder }}",
   "blocks": [
     {
       "type": "prompt",
@@ -19,7 +20,7 @@
           "properties": {
             "style": "full"
           },
-          "template": "{{ if .Root }}⛯ {{ end }}{{ .Path }} {{ .Shell | upper }}",
+          "template": "{{ if .Root }}⛯ {{ end }}{{ .Path }} {{ if .WSL}}WSL {{ if eq (atoi .Env.SHLVL) 1 }}ADMIN{{ else }}NOT ADMIN LEVEL{{end}} {{end}}{{ .Shell | upper }} {{if ne .Shell \"cmd\" }}V.{{ .ShellVersion | upper }}{{end}}"  ,
           "foreground": "blue",
           "background": "transparent",
           "type": "path",
