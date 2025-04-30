@@ -85,3 +85,10 @@ Or
 . ~/.profile #If applicable change "profile" to what your source file is.
 ```
 If done right, your user prompt sections will change applying the theme.
+
+> [!NOTE]
+> Appling the theme with these instructions **does not** apply it to the root user when using `sudo -s`. If you want instructions for appling this to the root user prompt they can be found in the [Advanced instructions for Bash {Root}](https://github.com/Exator921/Dark-My-Posh/blob/advanced/SETUP.md#bash-root)
+>
+> They are in the advanced instructions and not here because I feel you need to know the difference between main and root user which most people don't, they just see a terminal. Or are new to this kind of thing so this would be an advanced skill for them.
+>
+> You do not need to change anything in the commands or code given in the advanced instructions for applying the basic theme to root.
