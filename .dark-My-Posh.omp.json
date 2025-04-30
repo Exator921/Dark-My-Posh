@@ -20,7 +20,7 @@
           "properties": {
             "style": "full"
           },
-          "template": "{{ if .Root }}⛯ {{ end }}{{ .Path }} {{ if .WSL}}WSL {{ if eq (atoi .Env.SHLVL) 1 }}ADMIN{{ else }}NOT ADMIN LEVEL{{end}} {{end}}{{ .Shell | upper }} {{if ne .Shell \"cmd\" }}V.{{ .ShellVersion | upper }}{{end}}"  ,
+          "template": "{{ if .Root }}⛯ {{ end }}{{ .Path }} {{ if .WSL}}WSL {{end}}{{ .Shell | upper }} {{if ne .Shell \"cmd\" }}V.{{ .ShellVersion | upper }}{{end}}"  ,
           "foreground": "blue",
           "background": "transparent",
           "type": "path",
