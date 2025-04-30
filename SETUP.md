@@ -1,9 +1,10 @@
 # Set up instructions
 
 This set up file includes set up instructions for applying the oh-my-posh theme on the following terminals:
-- [PowerShell](https://github.com/Exator921/Dark-My-Posh/blob/main/SETUP.md#powershell)
-- [Command Prompt](https://github.com/Exator921/Dark-My-Posh/blob/main/SETUP.md#command-prompt)
-- [Bash](https://github.com/Exator921/Dark-My-Posh/blob/main/SETUP.md#bash)
+- [PowerShell](https://github.com/Exator921/Dark-My-Posh/blob/advanced/SETUP.md#powershell)
+- [Command Prompt](https://github.com/Exator921/Dark-My-Posh/blob/advanced/SETUP.md#command-prompt)
+- [Bash](https://github.com/Exator921/Dark-My-Posh/blob/advanced/SETUP.md#bash)
+- [Bash {Root}](https://github.com/Exator921/Dark-My-Posh/blob/advanced/SETUP.md#bash-root)
 
 Ensure you have oh-my-posh installed and download the theme [file](https://github.com/Exator921/Dark-My-Posh/blob/main/.dark-My-Posh.omp.json).
 >[!TIP]
@@ -85,3 +86,25 @@ Or
 . ~/.profile #If applicable change "profile" to what your source file is.
 ```
 If done right, your user prompt sections will change applying the theme.
+
+## Bash {Root}
+> [!NOTE]
+> For applying to root user you will need to have it on your main user first, follow the steps above if you haven't already.
+
+Ensure Oh-My-Posh is installed on the system, if it is not you can install it for the root user by following the installation guide. If it is already installed from the main user make it available to all users using the following command:
+```bash
+sudo cp "$(which oh-my-posh)" /usr/local/bin/
+```
+
+Next, you need to edit the source of the root user. You can do this from main or root but it will be easier (in my opinion) to use the main user to edit this. Use the following command to open the root users source:
+```bash
+sudo nano /root/.bashrc
+```
+
+Next at the bottom of the file, paste this line (DO NOT REPLACE WHAT IS ALREADY IN THERE):
+```profile
+eval "$(oh-my-posh init bash --config [DIRECTORY].dark-My-Posh.omp.json)"
+```
+Of course replacing [DIRECTORY] with the actual files location. It is recommended to be placed within your home directory.
+
+From there exit the root user and sign back into it to see the theme applied.
